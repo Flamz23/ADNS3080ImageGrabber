@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADNS3080_CAM</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+
+
+            <div class="display">
+                <span id="title">
+                    <p>ADNS3080 Image Grabber</p>
+                </span>
+                <canvas id="canvas" width="300" height="300"></canvas>
+
+                <span id="error">
+                    <p></p>
+                </span>
+            </div>
+
+            <div class="controls">
+                <button class="bg-green-500" id="refresh" onclick="listSerialPorts()">
+                    <p>Refresh</p>
+                </button>
+                <button id="open" onclick="openPort()">
+                    <p>Open</p>
+                </button>
+
+                <!-- dropdowns for port select and baud -->
+                <div class="selectWrapper">
+                    <label for="portPath">Port</label>
+                    <select name="portPath" id="portPath">
+                        <option value="" disabled selected>Select</option>
+                    </select>
+                </div>
+
+
+                <div class="selectWrapper">
+                    <label for="baudValue">Baud</label>
+                    <select name="baudValue" id="baudValue">
+                        <option value="1">9600</option>
+                        <option value="2">14400</option>
+                        <option value="3">19200</option>
+                        <option value="4">38400</option>
+                        <option value="5">57600</option>
+                        <option value="6" selected>115200</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- Range sliders for brigtness and contrast controls -->
+            <!-- <input type="range" id="brightness" name="brightness" min="-255" max="255">
+            <label for="brightness">brightness</label>
+    
+            <input type="range" id="contrast" name="contrast" min="-255" max="255">
+            <label for="contrast">contrast</label> -->
+        </div>
+    </div>
+
+
+
+</body>
+<script defer src="./renderer.js"></script>
+
+</html>
