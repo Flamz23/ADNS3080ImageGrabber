@@ -2,7 +2,7 @@
 
 This electron project captures frame data in the form of bytes sent by the ADNS3080 over a serial connection and attempts to generate images
 
-![Application sample](https://imgur.com/zpq9EF2)
+![Application sample](https://imgur.com/a/SmRTisn)
 
 For more info on setup and serial output visit https://github.com/Flamz23/ADNS3080-CAM
 
