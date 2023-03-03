@@ -1,6 +1,6 @@
 # ADNS3030-ImageGrabber
 
-This electron project captures frame data in the form of bytes sent by the ADNS3080 over a serial connection and attempts to generate images
+This electron project captures frame data in the form of bytes sent by the ADNS3080 over a serial connection and attempts to generate a video from the frames
 
 ![Application sample](https://i.imgur.com/8rPdwbC_d.webp?maxwidth=760&fidelity=grand)
 
